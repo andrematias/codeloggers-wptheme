@@ -1,0 +1,35 @@
+version: "3"
+
+services:
+  db:
+    image: mysql:5.7.31
+    container_name: db
+    restart: always
+    env_file: .env
+    environment:
+      - MYSQL_DATABASE=wordpress
+    volumes:
+      - dbdata:/var/lib/mysql
+
+
+  wordpress:
+    depends_on:
+      - db
+    working_dir: /var/www/html
+    image: wordpress:latest
+    volumes:
+      - ./themes:/var/www/html/wp-content/themes/codeloggers
+    container_name: blog
+    restart: always
+    env_file: .env
+    environment:
+      - WORDPRESS_DB_HOST=db
+      - WORDPRESS_DB_USER=$MYSQL_USER
+      - WORDPRESS_DB_PASSWORD=$MYSQL_PASSWORD
+      - WORDPRESS_DB_NAME=wordpress
+
+    ports:
+      - 80:80
+
+volumes:
+  dbdata:
