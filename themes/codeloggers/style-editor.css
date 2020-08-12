@@ -1,0 +1,109 @@
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Mono", monospace;
+  font-size: 18px;
+  letter-spacing: 0.0005rem;
+  line-height: 28px;
+  color: #4a4a4a; }
+
+@font-face {
+  font-family: Roboto;
+  src: url("./assets/fonts/Roboto/Roboto-Regular.ttf");
+  font-weight: normal; }
+
+@font-face {
+  font-family: "Roboto Bold";
+  src: url("./assets/fonts/Roboto/Roboto-Bold.ttf");
+  font-weight: bold; }
+
+@font-face {
+  font-family: "Roboto Black";
+  src: url("./assets/fonts/Roboto/Roboto-Black.ttf");
+  font-weight: bolder; }
+
+@font-face {
+  font-family: "Roboto Mono Bold";
+  src: url("./assets/fonts/Roboto/RobotoMono-Bold.ttf");
+  font-weight: bold; }
+
+@font-face {
+  font-family: "Roboto Mono";
+  src: url("./assets/fonts/Roboto/RobotoMono-Regular.ttf");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "iA";
+  src: url("./assets/fonts/iA-Fonts/iAWriterMonoS-Italic.ttf");
+  font-weight: normal;
+  font-style: italic; }
+
+
+/* 
+ * Main column width
+ * This changes it from the default 580px to 720px
+ */
+ .wp-block {
+  max-width: 1024px;
+  font-family: Roboto Mono;
+}
+
+/* 
+* Width of "wide" blocks
+* This changes it from the default 1080px to 1280px
+*/
+.wp-block[data-align="wide"] {
+  max-width: 1280px;
+}
+
+i {
+  font-family: iA, monospace; }
+
+b,
+strong {
+  font-family: "Roboto Mono Bold", monospace; }
+
+h1 {
+  font-size: 2em;
+  font-family: "Roboto Black";
+  font-weight: bolder;
+  color: #000000;
+  line-height: 40px; }
+
+h2 {
+  font-size: 1.5em;
+  font-family: "Roboto Bold";
+  font-weight: bold;
+  color: #7b7b7b;
+  line-height: 40px; }
+
+h3 {
+  font-size: 1em;
+  font-family: "Roboto Bold";
+  font-weight: bold;
+  color: #7b7b7b;
+  line-height: 40px; }
+
+p {
+  margin-top: 1.56em; }
+
+a {
+  text-decoration: underline;
+  color: #7b7b7b;
+  font-family: "Roboto", monospace; }
+
+label {
+  font-family: "Roboto", monospace;
+  color: #7b7b7b; }
+
+button,
+input {
+  min-height: 34px; }
+
+figure {
+  margin: 0;
+  padding: 0; }

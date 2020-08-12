@@ -1,0 +1,24 @@
+/*
+Theme Name: codeloggers
+Theme URI: https://github.com/andrematias/codeloggers-wptheme
+Author: André Matias
+Author URI: http://geransayeh.com
+Description: This is a simple theme to inspire and make things clear 
+Requires at least: WordPress 4.0
+Version: 1.0.0
+License: GNU General Public License v3 or later
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
+Text Domain: codeloggers
+Tags: one-column, custom-menu, rtl-language-support, threaded-comments, translation-ready
+
+Codeloggers Theme is based on Less Theme by Jared Erickson, GPL License - https://github.com/alliswell/Less
+This theme, like WordPress, is licensed under the GPL.
+*/
+
+#app-footer > span.line-separator {
+  margin-bottom: 1% !important;
+}
+
+.author-mini-bio #author-mini-bio-metadata {
+  flex-wrap: wrap;
+}
